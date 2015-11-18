@@ -1,10 +1,10 @@
 #pragma once
 
 template<class>
-class ExtractTemplate;
+class TemplateExtractor;
 
 template<template<class> class P, class C>
-struct ExtractTemplate<P<C>>
+struct TemplateExtractor<P<C>>
 {
     template<class C2>
     using Parent = P<C2>;
